@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 from .managers import CustomUserManager
 
+
 class User(AbstractUser):
     username = None
     first_name = models.CharField(max_length=50, verbose_name='Имя')
