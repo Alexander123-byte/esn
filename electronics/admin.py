@@ -53,6 +53,6 @@ class SellerAdmin(admin.ModelAdmin):
     list_filter = [CityFilter]
 
 
-admin.register(Contact)
+@admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
     list_display = ('email', 'country', 'city', 'street', 'house')
