@@ -14,5 +14,5 @@ class UserCreateSerializer(BaseUserRegistrationSerializer):
 class CurrentUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['first_name', 'last_name', 'phone', 'email', 'id', 'image']
+        fields = ['first_name', 'last_name', 'phone', 'email', 'id']
         validators = [NameValidator(field='first_name'), NameValidator(field='last_name')]
